@@ -16,9 +16,9 @@
 
 class Solution:
     def largest(self, arr):
-        # code here
+        n=len(arr)
         x=arr[0]
-        for i in range(len(arr)):
-            if(arr[i]>x):
+        for i in range(n):
+            if arr[i]>x:
                 x=arr[i]
         return x
