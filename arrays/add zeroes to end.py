@@ -15,6 +15,7 @@
 # Output: [0, 0]
 # Explanation: No change in array as there are all 0s.
 
+#1
 class Solution:
     def pushZerosToEnd(self, arr: list[int]) -> None:
         j = 0
@@ -22,3 +23,20 @@ class Solution:
             if arr[i] != 0:
                 arr[i], arr[j] = arr[j], arr[i]
                 j += 1
+
+
+#2(leetcode solved method)
+class Solution:
+    def moveZeroes(self, nums: list[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        res=[]
+        count=0
+        for i in range(len(nums)):
+            if nums[i]==0:
+                count+=1
+        for i in range(len(nums)):
+            if nums[i]!=0:
+                res.append(nums[i])
+        nums[:]=res+count*[0]

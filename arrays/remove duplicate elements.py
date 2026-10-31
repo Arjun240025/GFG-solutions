@@ -41,3 +41,22 @@ class Solution:
 # If the current element is not equal to the last element of res, it means we have found a new distinct element. So, we append the current element to res using res.append(arr[i]).
 # But if the current element is equal to the last element of res, it means the element is already present as the most recently stored distinct value. Since the array is sorted, duplicate elements appear next to each other, so we can simply skip that element without appending it.
 # Finally, we return res, which contains all the distinct elements in their original order.
+
+#2(leetcode solution)
+class Solution:
+    def removeDuplicates(self, nums: list[int]) -> int:
+        res=[]
+        for i in nums:
+            if i not in res:
+                res.append(i)
+            
+        nums[:len(res)] = res  # Replace the beginning of nums with unique elements
+        return len(res)
+
+#     For my understanding 
+# - len(res) determines how many unique elements there are.
+# - nums[:len(res)] selects that many elements from the beginning of nums.
+# - = res replaces those selected elements with the elements in res.
+# - The original nums list is modified; a new list is not assigned to nums.
+        
+
