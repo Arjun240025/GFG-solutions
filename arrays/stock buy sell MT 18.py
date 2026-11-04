@@ -20,4 +20,4 @@ class Solution:
             if prices[i] > prices[i - 1]:
                 profit += prices[i] - prices[i - 1]  # Add the profit
 
-        return profit  # Return the total profit
+        return profit  # Return the total profit    
