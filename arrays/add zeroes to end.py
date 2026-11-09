@@ -39,4 +39,4 @@ class Solution:
         for i in range(len(nums)):
             if nums[i]!=0:
                 res.append(nums[i])
-        nums[:]=res+count*[0]
+        nums[:]=res+count*[0]#creates new list with count number of 0s and adds it to the end of res list and then assigns it to nums list

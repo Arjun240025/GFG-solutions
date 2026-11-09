@@ -22,13 +22,13 @@ class Solution:
         return res
 
 
-#2 (better solution)
+#2 (better solution)#better always refer this pattern
 class Solution:
     def removeDuplicates(self, arr):
         res = [arr[0]]
 
         for i in range(1, len(arr)):
-            if arr[i] != res[-1]:
+            if arr[i] != res[-1]:#checks if the current element is not equal to the last element in res. If they are not equal, it means we have found a new distinct element.
                 res.append(arr[i])
 
         return res

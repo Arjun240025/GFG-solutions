@@ -19,5 +19,5 @@ class Solution:
         n=len(arr)
         for i in range(n):
             if arr[i]==x:
-                return i
-        return -1
+                return i# if found, return the index of the first occurrence of x in the array
+        return -1#if element is not found in the array, return -1

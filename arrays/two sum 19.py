@@ -26,7 +26,7 @@ class Solution:
             # and the previously stored element add up to the target.
             # So, we stop the function and return True.
             if need in seen:
-                return True
+                return True#whenever the same number adds up in seen it stops the execution and returns True, as we have found a pair that adds up to the target
 
             # If the need value is not in seen, add the current element
             # to seen and continue to the next element.

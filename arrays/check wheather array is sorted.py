@@ -19,7 +19,7 @@ class Solution:
     def isSorted(self, arr):
         n = len(arr)
 
-        for i in range(n - 1):
+        for i in range(n - 1):#n-1 because we are comparing the current element with the next element, so we don't need to check the last element
             if arr[i] > arr[i + 1]:
                 return False
 

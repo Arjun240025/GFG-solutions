@@ -15,7 +15,7 @@
 # Output: 25
 # Explanation: The subarray [5, 4, 1, 7, 8] has the largest sum 25.
 
-class Solution:
+class Solution:#very important to understand this algorithm, as it is used in many problems
     def maxSubarraySum(self, arr):
         curr_sum = arr[0]  # Initialize current sum with the first element
         max_sum = arr[0]  # Initialize maximum sum with the first element

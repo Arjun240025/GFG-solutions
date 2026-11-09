@@ -20,7 +20,7 @@ class Solution:
         arr.sort()
         largest = arr[-1]
 
-        for i in range(n - 2, -1, -1):
+        for i in range(n - 2, -1, -1):#n-2 because we are starting from the second last element and going backwards to the first element,-1 because we want to include the first element in the loop,-1 because we want to decrement the index by 1 in each iteration
             if arr[i] != largest:
                 return arr[i]
 

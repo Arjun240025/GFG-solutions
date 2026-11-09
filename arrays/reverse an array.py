@@ -23,7 +23,7 @@ class Solution:
 
         #two pointer appproach
 
-class Solution:
+class Solution:#always use and refer this pattern for reversing an array, as it is used in many problems
     def reverseArray(self, arr):
         left = 0
         right = len(arr) - 1
