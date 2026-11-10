@@ -23,7 +23,7 @@ class Solution:
     def reverseString(self, s: str) -> str:
         # code here
         # return s[::-1]
-        res = list(s)  # Converts the string into a list of characters
+        res = list(s)  # Converts the string into a list of characters((list(s) is used to convert the string into a list of characters, so that we can reverse it in place))
         res.reverse()  # Reverses the list in place
         return "".join(res)  # Joins the characters into a string
     

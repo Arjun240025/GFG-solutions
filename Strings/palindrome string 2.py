@@ -22,7 +22,7 @@ class Solution:
         return False
 
 
-#2(two pointer approach)
+#2(two pointer approach)(always use this approach)
 class Solution:
     def isPalindrome(self, s):
         left = 0

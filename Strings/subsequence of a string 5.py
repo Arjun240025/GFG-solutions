@@ -18,6 +18,6 @@ class Solution:
     def isSubSeq(self, s1, s2):
         j=0
         for i in s2:
-            if j<len(s1) and s1[j]==i:
+            if j<len(s1) and s1[j]==i:#since j must be equal to the length of s1, we check if j is less than the length of s1. If it is, we check if the character at index j in s1 is equal to the current character in s2. If they are equal, we increment j to move to the next character in s1.
                 j+=1
         return j ==len(s1)
