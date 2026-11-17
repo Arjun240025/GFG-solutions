@@ -60,3 +60,20 @@ class Solution:
 # - The original nums list is modified; a new list is not assigned to nums.
         
 
+#two pointer approach
+class Solution:
+    def removeDuplicates(self, arr):
+        left=0
+        for right in range(1,len(arr)):
+            if arr[left]!=arr[right]:
+                left+=1
+                arr[left]=arr[right]
+        return arr[:left+1]
+        
+        # Remember:
+        # - left += 1 → Moves to the next position available for a unique element.
+        # - arr[left] = arr[right] → Copies the newly found unique element into that position.
+        # Why not just arr[:left]?
+        # Because slicing excludes the ending index.
+
+        # If we use arr[:2], we get [1, 2] and miss 3.
